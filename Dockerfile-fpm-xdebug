@@ -1,0 +1,4 @@
+FROM coffeelovers/php:7.0-fpm
+
+COPY fpm/xdebug.so /usr/local/lib/php/extensions/no-debug-non-zts-20151012/
+RUN touch /tmp/xdebug.log && chmod -R 777 /tmp/
